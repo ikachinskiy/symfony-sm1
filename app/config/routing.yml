@@ -1,0 +1,29 @@
+homepage:
+  path:     /
+  defaults: { _controller:AppBundle:Default:index }
+
+employer:
+  path:     /empl
+  defaults: { _controller:AppBundle:Default:empl }
+
+employer_command:
+  path:     /empl/{command}
+  defaults: { _controller:AppBundle:Default:emplCommand }
+
+manager:
+  path:     /manager
+  defaults: { _controller:AppBundle:Default:manager }
+
+manager_command:
+  path:     /manager/{command}
+  defaults: { _controller:AppBundle:Default:managerCommand }
+
+analitic:
+  path:     /analit
+  defaults: { _controller:AppBundle:Default:analit }
+
+analitic_command:
+  path:     /analit/{command}
+  defaults: { _controller:AppBundle:Default:analitCommand }
+
+

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,OAAQ;EACN,gBAAgB,EAAE,uBAAuB;;AAG3C,UAAW;EACP,WAAW,EAAE,IAAI;EACjB,gBAAgB,EAAE,OAAO",
+"sources": ["../scss/skin.scss"],
+"names": [],
+"file": "skin.css"
+}

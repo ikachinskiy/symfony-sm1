@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    SMetric - 01
+{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('assets/css/skin.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
+{% endblock %}
+
+{% block main_menu %}
+    {{ knp_menu_render('AppBundle:Builder:mainMenu') }}
+{% endblock %}
+
+{% block left_head %}
+    <p class="left_head">Меню</p>
+    <small class="text-muted left_head">(сотрудника)</small>
+{% endblock %}
+
+{% block left_menu %}
+    {{ knp_menu_render('AppBundle:Builder:emplMenu') }}
+{% endblock %}
+
+{% block right_head %}
+    <p class="lead">Рабочее место сотрудника</p>
+{% endblock %}
+
+{% block right_content %}
+    {% if command == 'first' %}
+        {% include '/default/empl/emplFirst.html.twig' %}
+    {% endif %}
+    {% if command == 'second' %}
+        {% include '/default/empl/emplSecond.html.twig' %}
+    {% endif %}
+    {% if command == 'third' %}
+        {% include '/default/empl/emplThird.html.twig' %}
+    {% endif %}
+{% endblock %}
+
+
+{% block javascripts %}
+{% endblock %}
